@@ -14,6 +14,9 @@
 		B213445410A0BA690001FE31 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B213445110A0BA690001FE31 /* main.m */; };
 		B27DA52710A159A4007EE31D /* JSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B27DA52610A159A4007EE31D /* JSON.framework */; };
 		B27DA54510A15AC9007EE31D /* PJDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B27DA54410A15AC9007EE31D /* PJDViewController.m */; };
+		B27DA5B110A15E16007EE31D /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B27DA5AF10A15E16007EE31D /* Icon.png */; };
+		B27DA5B210A15E16007EE31D /* iTunesArtwork in Resources */ = {isa = PBXBuildFile; fileRef = B27DA5B010A15E16007EE31D /* iTunesArtwork */; };
+		B27DA5BA10A15EC4007EE31D /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = B27DA5B910A15EC4007EE31D /* Default.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,9 @@
 		B27DA52610A159A4007EE31D /* JSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JSON.framework; path = System/Library/PrivateFrameworks/JSON.framework; sourceTree = SDKROOT; };
 		B27DA54310A15AC9007EE31D /* PJDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PJDViewController.h; sourceTree = "<group>"; };
 		B27DA54410A15AC9007EE31D /* PJDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PJDViewController.m; sourceTree = "<group>"; };
+		B27DA5AF10A15E16007EE31D /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		B27DA5B010A15E16007EE31D /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = file; path = iTunesArtwork; sourceTree = "<group>"; };
+		B27DA5B910A15EC4007EE31D /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +110,7 @@
 		B213445210A0BA690001FE31 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B27DA5AE10A15E16007EE31D /* Images */,
 				B213445310A0BA690001FE31 /* PrivateJSONTest-Info.plist */,
 			);
 			path = Resources;
@@ -117,6 +124,16 @@
 				B27DA51910A15936007EE31D /* JSON-JSONWriter.h */,
 			);
 			name = "Private Headers";
+			sourceTree = "<group>";
+		};
+		B27DA5AE10A15E16007EE31D /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				B27DA5B910A15EC4007EE31D /* Default.png */,
+				B27DA5AF10A15E16007EE31D /* Icon.png */,
+				B27DA5B010A15E16007EE31D /* iTunesArtwork */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,6 +181,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B27DA5B110A15E16007EE31D /* Icon.png in Resources */,
+				B27DA5B210A15E16007EE31D /* iTunesArtwork in Resources */,
+				B27DA5BA10A15EC4007EE31D /* Default.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
