@@ -1,0 +1,14 @@
+//
+//  PrivateJSONTest_Prefix.pch
+//  PrivateJSONTest
+//
+//  Created by Sam Soffes on 11/4/09.
+//  Copyright 2009 __MyCompanyName__. All rights reserved.
+//
+//	Prefix header for all source files of the 'PrivateJSONTest' target in the 'PrivateJSONTest' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+    #import <UIKit/UIKit.h>
+#endif
