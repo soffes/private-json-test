@@ -12,6 +12,7 @@
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
 		B213445410A0BA690001FE31 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B213445110A0BA690001FE31 /* main.m */; };
+		B27DA52710A159A4007EE31D /* JSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B27DA52610A159A4007EE31D /* JSON.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,10 @@
 		B213445010A0BA690001FE31 /* PrivateJSONTest_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrivateJSONTest_Prefix.pch; sourceTree = "<group>"; };
 		B213445110A0BA690001FE31 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B213445310A0BA690001FE31 /* PrivateJSONTest-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "PrivateJSONTest-Info.plist"; sourceTree = "<group>"; };
+		B27DA51810A15936007EE31D /* JSON-JSONParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JSON-JSONParser.h"; sourceTree = "<group>"; };
+		B27DA51910A15936007EE31D /* JSON-JSONWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JSON-JSONWriter.h"; sourceTree = "<group>"; };
+		B27DA51A10A15936007EE31D /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
+		B27DA52610A159A4007EE31D /* JSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JSON.framework; path = System/Library/PrivateFrameworks/JSON.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +39,7 @@
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
 				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
+				B27DA52710A159A4007EE31D /* JSON.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,6 +51,7 @@
 			children = (
 				1D3623240D0F684500981E51 /* AppDelegate.h */,
 				1D3623250D0F684500981E51 /* AppDelegate.m */,
+				B27DA51710A15928007EE31D /* Private Headers */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -72,6 +79,7 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B27DA52610A159A4007EE31D /* JSON.framework */,
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
 				288765FC0DF74451002DB57D /* CoreGraphics.framework */,
@@ -94,6 +102,16 @@
 				B213445310A0BA690001FE31 /* PrivateJSONTest-Info.plist */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		B27DA51710A15928007EE31D /* Private Headers */ = {
+			isa = PBXGroup;
+			children = (
+				B27DA51A10A15936007EE31D /* JSON.h */,
+				B27DA51810A15936007EE31D /* JSON-JSONParser.h */,
+				B27DA51910A15936007EE31D /* JSON-JSONWriter.h */,
+			);
+			name = "Private Headers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,6 +179,10 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SDKROOT)$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks\"",
+				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -175,6 +197,10 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SDKROOT)$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Other Sources/PrivateJSONTest_Prefix.pch";
 				INFOPLIST_FILE = "Resources/PrivateJSONTest-Info.plist";
